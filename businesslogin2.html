@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Item Selling Bid Page</title>
+  <style>
+    /* Styles for the home button and form */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      resize: vertical;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .submit:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-button">Home</a>
+
+  <h1>Item Selling Bid Page</h1>
+  <form action="user_bid_confirmation.html" method="POST">
+    <label for="item_name">Item Name:</label>
+    <input type="text" id="item_name" name="item_name" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="condition">Condition:</label>
+    <input type="text" id="condition" name="condition" required>
+
+    <label for="asking_price">Asking Price:</label>
+    <input type="number" id="asking_price" name="asking_price" required>
+
+    <label for="auction_end_date">Auction End Date and Time:</label>
+    <input type="datetime-local" id="auction_end_date" name="auction_end_date" required>
+
+    <label for="payment_methods">Payment Methods Accepted:</label>
+    <input type="text" id="payment_methods" name="payment_methods" required>
+
+    <label for="contact_info">Contact Information:</label>
+    <input type="text" id="contact_info" name="contact_info" required>
+
+    <br>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+</body>
+</html>

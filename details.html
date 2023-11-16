@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact & Customer Care</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    h2 {
+      color: #333333;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 0;
+    }
+
+    .customer-care {
+      margin-bottom: 20px;
+    }
+
+    .customer-care h2 {
+      margin-bottom: 10px;
+    }
+
+    .customer-care ul {
+      padding-left: 20px;
+    }
+
+    .customer-care li {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+
+    .customer-care strong {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      font-size: 16px;
+      border-radius: 10px;
+      padding: 10px 30px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-right: 10px;
+    }
+
+    .button-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact & Customer Care</h1>
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>
+        If you have any questions or need assistance, please feel free to reach out to us using the following contact information:
+      </p>
+      <p>
+        <strong>Email:</strong> info@auctionify.com<br>
+        <strong>Phone:</strong> 123-456-7890<br>
+        <strong>Address:</strong>  Online Street, Auction City, India<br>
+      </p>
+    </div>
+
+    <div class="customer-care">
+      <h2>Customer Care</h2>
+      <p>
+        Our dedicated customer care team is available to assist you with any inquiries or issues you may have. Please refer to the following information to get in touch with our customer care department:
+      </p>
+      <ul>
+        <li>
+          <strong>Phone:</strong> 1-800-123-4567
+        </li>
+        <li>
+          <strong>Email:</strong> customercare@auctionify.com
+        </li>
+        <li>
+          <strong>Working Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM (GMT)
+        </li>
+      </ul>
+    </div>
+
+    <div class="button-container">
+      <button onclick="goBack()">Back</button>
+      <button onclick="goToHomePage()">Home</button>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "contact.html";
+    }
+
+    function goToHomePage() {
+      window.location.href = "index.html"; // Replace "index.html" with the actual path to your home page
+    }
+  </script>
+</body>
+</html>

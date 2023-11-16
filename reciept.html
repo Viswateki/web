@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Receipt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f1f1f1;
+      font-weight: bold;
+    }
+
+    td {
+      font-size: 14px;
+    }
+
+    .print-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .home-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Receipt</h1>
+    <table>
+      <tr>
+        <th>Date</th>
+        <td>13-6-2023</td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>T.viswagnabramha</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>tekiviswagna@gmail.com</td>
+      </tr>
+      <tr>
+        <th>Amount</th>
+        <td>125000</td>
+      </tr>
+      <tr>
+        <th>Description</th>
+        <td>Product Purchase</td>
+      </tr>
+      <tr>
+        <th>Item delivery</th>
+        <td>18-6-2023</td>
+      </tr>
+      <!-- <tr>
+        <th>Expiry Date</th>
+        <td>**/**</td>
+      </tr>
+      <tr>
+        <th>CVV</th>
+        <td>***</td>
+      </tr> -->
+    </table>
+    <div class="print-button">
+      <button onclick="window.print()">Print Receipt</button>
+    </div>
+    <div class="home-button">
+      <button onclick="window.location.href='index.html'">Go to Home</button>
+    </div>
+    <div class="note">
+      <p>Your payment has been successfully completed. Your item is on its way.</p>
+    </div>
+  </div>
+</body>
+</html>
